@@ -1,0 +1,7 @@
+FROM jwilder/dockerize AS dockerize
+
+FROM jairoandre/mongeez-cli
+
+COPY --from=dockerize /usr/local/bin/dockerize /usr/local/bin
+
+ENTRYPOINT ["dockerize"]
