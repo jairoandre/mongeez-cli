@@ -4,7 +4,7 @@ MongoDB migration Tool.
 
 This project simplifies the usage of the [mongeez](https://github.com/mongeez/mongeez).
 
-Features:
+### Features:
 
 - No need to mantain a "mongeez.xml" file.
 - Dockerized.
@@ -30,3 +30,7 @@ java -jar mongeez-cli-0.0.1.jar [OPTIONS]
 `java -jar mongeez-cli-0.0.1.jar -host=another_host -port=27018 -db=mydb -path=/path/to/migrations/folder/`
 
 See the docker-compose.yml located in this project to see a "dockerized" usage example.
+
+## Docker
+
+`docker pull jairoandre/mongeez-cli`
